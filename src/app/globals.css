@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: black;
+  color: white;
+}
+
+@layer base {
+
+  header,
+  footer,
+  section {
+    @apply px-container;
+  }
+
+  section {
+    @apply py-10;
+  }
+}
+
+@layer components {
+  .px-container {
+    padding-left: max(0.75rem
+        /* 12px */
+        ,
+        calc((100vw - calc(1280px - 1rem
+              /* 16px */
+              * 2)) / 2));
+    padding-right: max(0.75rem
+        /* 12px */
+        ,
+        calc((100vw - calc(1280px - 1rem
+              /* 16px */
+              * 2)) / 2));
+  }
+}
