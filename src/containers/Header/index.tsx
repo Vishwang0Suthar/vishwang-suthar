@@ -13,7 +13,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <header className="border-t-2 bg-white border-b-2 sticky border-black w-full top-0 mt-2  h-16 ">
+    <header className="border-t-2 z-50 bg-white border-b-2 sticky border-black w-full top-0 mt-2  h-16 ">
       <div className="flex justify-between border-r-2 border-l-2 border-black items-center divide-x-2  divide-black  h-full">
         <div className="aspect-square  flex items-center h-full justify-center ">
           <Image src={Volume} alt="Volume Icon" className="h-8 w-8" />
