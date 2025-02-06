@@ -13,10 +13,10 @@ export default function TiltedCard({
   imageSrc,
   altText = "Tilted card image",
   captionText = "",
-  containerHeight = "300px",
+  containerHeight = "100%",
   containerWidth = "100%",
-  imageHeight = "300px",
-  imageWidth = "300px",
+  imageHeight = "100%",
+  imageWidth = "100%",
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
   showMobileWarning = true,
@@ -102,7 +102,7 @@ export default function TiltedCard({
         }}
       >
         <motion.div
-          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
+          className="absolute flex items-center justify-center top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
           style={{
             width: imageWidth,
             height: imageHeight,
@@ -124,7 +124,7 @@ export default function TiltedCard({
         )}
       </motion.div>
 
-      {/* {showTooltip && (
+      {showTooltip && (
         <motion.figcaption
           className="pointer-events-none absolute left-0 top-0 rounded-[4px] bg-white px-[10px] py-[4px] text-[10px] text-[#2d2d2d] opacity-0 z-[3] hidden sm:block"
           style={{
@@ -136,7 +136,7 @@ export default function TiltedCard({
         >
           {captionText}
         </motion.figcaption>
-      )} */}
+      )}
     </figure>
   );
 }
