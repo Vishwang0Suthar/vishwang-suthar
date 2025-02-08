@@ -21,12 +21,13 @@ const Header = () => {
         {navItems.map((item, index) => (
           <div
             key={index}
-            className="flex-1 h-full   cursor-pointer  duration-300 hover:bg-black group"
+            className="flex-1 h-full   cursor-pointer relative duration-300 overflow-hidden  group"
           >
             <Link href={item.href} className="h-full grid items-center w-full">
-              <p className="text-lg lg:text-2xl text-center  text-black group-hover:text-white">
+              <div className="absolute h-full w-full filter group-hover:-translate-y-[0] invert duration-300 mix-blend-difference bg-black translate-y-[100%] "></div>
+              <p className="text-lg lg:text-2xl text-center  text-black">
                 {item.label}
-              </p>
+              </p>{" "}
             </Link>
           </div>
         ))}

@@ -5,7 +5,7 @@ import Brushstroke from "@/components/brushstroke";
 export default function Home() {
   return (
     <section>
-      <div className="flex h-[38rem] lg:flex-row flex-col gap-4">
+      <div className="flex h-[38rem] lg:flex-row flex-col gap-24 lg:gap-4">
         <div className="flex-1 flex  items-center justify-center lg:justify-start p-6">
           <div className="flex flex-col ">
             <h1 className="text-4xl font-semibold  ">
