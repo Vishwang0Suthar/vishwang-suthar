@@ -42,3 +42,28 @@ export const ProjectInfo = [
     link: "https://crt-tv.vercel.app/",
   },
 ];
+
+import one from "@/public/images/catalogue/1.jpg";
+import two from "@/public/images/catalogue/2.jpg";
+import three from "@/public/images/catalogue/3.jpg";
+import four from "@/public/images/catalogue/4.jpg";
+import five from "@/public/images/catalogue/5.jpg";
+import six from "@/public/images/catalogue/6.jpg";
+import seven from "@/public/images/catalogue/7.jpg";
+import eight from "@/public/images/catalogue/8.jpg";
+import nine from "@/public/images/catalogue/9.jpg";
+import ten from "@/public/images/catalogue/10.jpg";
+import tenone from "@/public/images/catalogue/11.jpg";
+export const Catalogue = [
+  { imgUrl: one, alt: "Cata-img-1" },
+  { imgUrl: two, alt: "Cata-img-2" },
+  { imgUrl: three, alt: "Cata-img-3" },
+  { imgUrl: four, alt: "Cata-img-4" },
+  { imgUrl: five, alt: "Cata-img-5" },
+  { imgUrl: six, alt: "Cata-img-6" },
+  { imgUrl: seven, alt: "Cata-img-7" },
+  { imgUrl: eight, alt: "Cata-img-8" },
+  { imgUrl: nine, alt: "Cata-img-9" },
+  { imgUrl: ten, alt: "Cata-img-10" },
+  { imgUrl: tenone, alt: "Cata-img-11" },
+];
