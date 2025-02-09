@@ -53,7 +53,22 @@ import seven from "@/public/images/catalogue/7.jpg";
 import eight from "@/public/images/catalogue/8.jpg";
 import nine from "@/public/images/catalogue/9.jpg";
 import ten from "@/public/images/catalogue/10.jpg";
-import tenone from "@/public/images/catalogue/11.jpg";
+import eleven from "@/public/images/catalogue/11.jpg";
+import twelve from "@/public/images/catalogue/12.jpg";
+import thirteen from "@/public/images/catalogue/13.jpg";
+import fourteen from "@/public/images/catalogue/14.jpg";
+import fifteen from "@/public/images/catalogue/15.jpg";
+import sixteen from "@/public/images/catalogue/16.jpg";
+import seventeen from "@/public/images/catalogue/17.jpg";
+import eighteen from "@/public/images/catalogue/18.jpg";
+import nineteen from "@/public/images/catalogue/19.jpg";
+import twenty from "@/public/images/catalogue/20.jpg";
+import twentyone from "@/public/images/catalogue/21.jpg";
+import twentytwo from "@/public/images/catalogue/22.jpg";
+import twentythree from "@/public/images/catalogue/23.jpg";
+import twentyfour from "@/public/images/catalogue/24.jpg";
+import twentyfive from "@/public/images/catalogue/25.jpg";
+
 export const Catalogue = [
   { imgUrl: one, alt: "Cata-img-1" },
   { imgUrl: two, alt: "Cata-img-2" },
@@ -65,5 +80,19 @@ export const Catalogue = [
   { imgUrl: eight, alt: "Cata-img-8" },
   { imgUrl: nine, alt: "Cata-img-9" },
   { imgUrl: ten, alt: "Cata-img-10" },
-  { imgUrl: tenone, alt: "Cata-img-11" },
+  { imgUrl: eleven, alt: "Cata-img-11" },
+  { imgUrl: twelve, alt: "Cata-img-12" },
+  { imgUrl: thirteen, alt: "Cata-img-13" },
+  { imgUrl: fourteen, alt: "Cata-img-14" },
+  { imgUrl: fifteen, alt: "Cata-img-15" },
+  { imgUrl: sixteen, alt: "Cata-img-16" },
+  { imgUrl: seventeen, alt: "Cata-img-17" },
+  { imgUrl: eighteen, alt: "Cata-img-18" },
+  { imgUrl: nineteen, alt: "Cata-img-19" },
+  { imgUrl: twenty, alt: "Cata-img-20" },
+  { imgUrl: twentyone, alt: "Cata-img-21" },
+  { imgUrl: twentytwo, alt: "Cata-img-22" },
+  { imgUrl: twentythree, alt: "Cata-img-23" },
+  { imgUrl: twentyfour, alt: "Cata-img-24" },
+  { imgUrl: twentyfive, alt: "Cata-img-25" },
 ];

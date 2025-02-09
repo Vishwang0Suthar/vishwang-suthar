@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/containers/Header";
+import { ThemeProvider } from "@/components/themeprovider";
 
 const ibmMono = IBM_Plex_Mono({
   // variable: "--font-ibm-plex-mono",
@@ -11,7 +12,7 @@ const ibmMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "Vishwang-Suthar",
-  description: "Prtfolio",
+  description: "Portfolio",
 };
 
 export default function RootLayout({
@@ -23,7 +24,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${ibmMono.className}  antialiased`}>
         <Header />
+        {/* <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        > */}
         {children}
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
