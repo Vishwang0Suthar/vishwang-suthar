@@ -17,15 +17,17 @@ const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
       }`}
     >
       <div
-        className="rounded-full border-2 aspect-square flex h-6 items-center justify-center cursor-pointer border-black"
+        className="min-h-20 items-center flex cursor-pointer"
         onClick={() => setToggleInfo(!toggleInfo)}
       >
-        <Image
-          src={toggleInfo ? close : info}
-          //   className={` duration-300 ${toggleInfo ? "rotate-0 " : "rotate-0"}`}
-          className="duration-300 "
-          alt="toggle-info"
-        />
+        <div className="rounded-full border-2 aspect-square flex h-6 items-center justify-center  border-black">
+          <Image
+            src={toggleInfo ? close : info}
+            //   className={` duration-300 ${toggleInfo ? "rotatSe-0 " : "rotate-0"}`}
+            className="duration-300 "
+            alt="toggle-info"
+          />
+        </div>
       </div>
 
       {/* {toggleInfo && ( */}
