@@ -4,7 +4,8 @@ import Close from "@/public/icons/close.svg";
 import Gift from "@/public/images/projects-thumbnails/gift-city.png";
 import MemoryGame from "@/public/images/projects-thumbnails/memory-game.png";
 import CRTtv from "@/public/images/projects-thumbnails/crt-tv-2.png";
-
+import Streamlit from "@/public/images/projects-thumbnails/streamlit.png";
+import Lustria from "@/public/images/projects-thumbnails/Lustria.png";
 export const Icons = [
   {
     icon: Minimize,
@@ -19,6 +20,13 @@ export const Icons = [
 
 export const ProjectInfo = [
   {
+    heading: "Internship Project",
+    title: "Lustria",
+    body: `Led a team of seven to create **Lustria**, an e-commerce platform dedicated to bringing plant nurseries online. With teamwork, creativity, and expert guidance, we built a seamless shopping experience for plant lovers.`,
+    imgURL: Lustria,
+    link: "https://galactic-bits-nursery.vercel.app/",
+  },
+  {
     heading: "Gift City Web",
     title: "Gift Connect",
     body: `Built an interactive Gift City homepage during SSPI 2.0, featuring
@@ -32,14 +40,21 @@ export const ProjectInfo = [
     title: "Memory Game",
     body: `An interactive memory game where players flip and match cards while enjoying their favorite Spotify tracks. Built as a fun personal project to enhance engagement with music and gameplay!`,
     imgURL: MemoryGame,
-    link: "https://memory-game-flax-six.vercel.app/#",
+    link: "https://www.linkedin.com/posts/vishwang-suthar_madewithvue-react-personalproject-activity-7283394986195193857-bcfR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
   },
   {
     heading: "Fun Project",
     title: "CRT-TV",
-    body: `A fun personal project featuring a 3D-styled button, a toggleable CRT TV effect, along with theme toggle,and interactive animations. Enhanced with sound effects using React’s useSound library and a creative image-based illusion, this project brings nostalgia with a modern twist!`,
+    body: `A personal project featuring a 3D-styled button, a toggleable CRT TV, along with theme toggle,and interactive animations. Enhanced with sound effects using React’s useSound library and a creative image-based illusion, this project brings nostalgia with a modern twist!`,
     imgURL: CRTtv,
     link: "https://crt-tv.vercel.app/",
+  },
+  {
+    heading: "Hackathon Project",
+    title: "Anomaly Detector",
+    body: `Built an Anomaly Detection App using Streamlit and ADTK, leveraging multiple techniques to detect anomalies in time-series data. The app provides interactive visualizations and real-time insights for better data analysis.`,
+    imgURL: Streamlit,
+    link: "https://www.linkedin.com/posts/vishwang-suthar_python-dataanalysis-anomalydetection-activity-7140781091807830017-88WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
   },
 ];
 
