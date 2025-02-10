@@ -1,7 +1,6 @@
 import TextPressure from "@/ui/TextPressure/TextPressure";
 import React from "react";
-import mono from "@/public/fonts/";
-import { IBM_Plex_Mono } from "next/font/google";
+
 type Props = {};
 
 const Contact = (props: Props) => {
