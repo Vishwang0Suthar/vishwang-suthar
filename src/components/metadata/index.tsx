@@ -10,6 +10,13 @@ interface MetadataInfoProps {
 const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
   const [toggleInfo, setToggleInfo] = useState(false);
 
+  const formattedDate =
+    metadata.DateTimeOriginal instanceof Date
+      ? metadata.DateTimeOriginal.toLocaleDateString()
+      : metadata.DateTimeOriginal
+      ? new Date(metadata.DateTimeOriginal).toLocaleDateString()
+      : "Unknown";
+
   return (
     <div
       className={`bg-white absolute z-10 flex gap-4 items-center duration-300 text-left min-w-[23rem] text-black p-4 pr-24 top-3/4 -right-24 lg:-right-10 rounded-md mt-4 ${
@@ -31,7 +38,7 @@ const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
       </div>
 
       {/* {toggleInfo && ( */}
-      <div className="text-xs md:text-base">
+      <div className="text-xs  md:text-base">
         <p>
           Aperture: <span className="italic">f</span>{" "}
           {metadata.ApertureValue || "N/A"}
@@ -39,6 +46,7 @@ const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
         <p>ISO: {metadata.ISO || "N/A"}</p>
         <p>Shutter-Speed: {metadata.ExposureTime || "N/A"}</p>
         <p>Camera: {metadata.Model || "Unknown"}</p>
+        <p>Date: {formattedDate}</p>
       </div>
       {/* )} */}
     </div>

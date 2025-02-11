@@ -58,56 +58,80 @@ export const ProjectInfo = [
   },
 ];
 
-import one from "@/public/images/catalogue/1.jpg";
-import two from "@/public/images/catalogue/2.jpg";
-import three from "@/public/images/catalogue/3.jpg";
-import four from "@/public/images/catalogue/4.jpg";
-import five from "@/public/images/catalogue/5.jpg";
-import six from "@/public/images/catalogue/6.jpg";
-import seven from "@/public/images/catalogue/7.jpg";
-import eight from "@/public/images/catalogue/8.jpg";
-import nine from "@/public/images/catalogue/9.jpg";
-import ten from "@/public/images/catalogue/10.jpg";
-import eleven from "@/public/images/catalogue/11.jpg";
-import twelve from "@/public/images/catalogue/12.jpg";
-import thirteen from "@/public/images/catalogue/13.jpg";
-import fourteen from "@/public/images/catalogue/14.jpg";
-import fifteen from "@/public/images/catalogue/15.jpg";
-import sixteen from "@/public/images/catalogue/16.jpg";
-import seventeen from "@/public/images/catalogue/17.jpg";
-import eighteen from "@/public/images/catalogue/18.jpg";
-import nineteen from "@/public/images/catalogue/19.jpg";
-import twenty from "@/public/images/catalogue/20.jpg";
-import twentyone from "@/public/images/catalogue/21.jpg";
-import twentytwo from "@/public/images/catalogue/22.jpg";
-import twentythree from "@/public/images/catalogue/23.jpg";
-import twentyfour from "@/public/images/catalogue/24.jpg";
-import twentyfive from "@/public/images/catalogue/25.jpg";
+// images import
+
+import zero1 from "@/public/images/catalogue/0 (1).jpg";
+import zero2 from "@/public/images/catalogue/0 (2).jpg";
+import zero3 from "@/public/images/catalogue/0 (3).jpg";
+import zero4 from "@/public/images/catalogue/0 (4).jpg";
+import zero5 from "@/public/images/catalogue/0 (5).jpg";
+import zero6 from "@/public/images/catalogue/0 (6).jpg";
+import zero7 from "@/public/images/catalogue/0 (7).jpg";
+import zero8 from "@/public/images/catalogue/0 (8).jpg";
+import zero9 from "@/public/images/catalogue/0 (9).jpg";
+import zero10 from "@/public/images/catalogue/0 (10).jpg";
+import zero11 from "@/public/images/catalogue/0 (11).jpg";
+import zero12 from "@/public/images/catalogue/0 (12).jpg";
+import zero13 from "@/public/images/catalogue/0 (13).jpg";
+import zero14 from "@/public/images/catalogue/0 (14).jpg";
+import zero15 from "@/public/images/catalogue/0 (15).jpg";
+import zero16 from "@/public/images/catalogue/0 (16).jpg";
+import zero17 from "@/public/images/catalogue/0 (17).jpg";
+import zero18 from "@/public/images/catalogue/0 (18).jpg";
+import zero19 from "@/public/images/catalogue/0 (19).jpg";
+import zero20 from "@/public/images/catalogue/0 (20).jpg";
+import zero21 from "@/public/images/catalogue/0 (21).jpg";
+import zero22 from "@/public/images/catalogue/0 (22).jpg";
+import zero23 from "@/public/images/catalogue/0 (23).jpg";
+import zero24 from "@/public/images/catalogue/0 (24).jpg";
+import zero25 from "@/public/images/catalogue/0 (25).jpg";
+import zero26 from "@/public/images/catalogue/0 (26).jpg";
+import zero27 from "@/public/images/catalogue/0 (27).jpg";
+import zero28 from "@/public/images/catalogue/0 (28).jpg";
+import zero29 from "@/public/images/catalogue/0 (29).jpg";
+import zero30 from "@/public/images/catalogue/0 (30).jpg";
+import zero31 from "@/public/images/catalogue/0 (31).jpg";
+import zero32 from "@/public/images/catalogue/0 (32).jpg";
+import zero33 from "@/public/images/catalogue/0 (33).jpg";
+import zero34 from "@/public/images/catalogue/0 (34).jpg";
+import zero35 from "@/public/images/catalogue/0 (35).jpg";
+import zero36 from "@/public/images/catalogue/0 (36).jpg";
 
 export const Catalogue = [
-  { imgUrl: one, alt: "Cata-img-1" },
-  { imgUrl: two, alt: "Cata-img-2" },
-  { imgUrl: three, alt: "Cata-img-3" },
-  { imgUrl: four, alt: "Cata-img-4" },
-  { imgUrl: five, alt: "Cata-img-5" },
-  { imgUrl: six, alt: "Cata-img-6" },
-  { imgUrl: seven, alt: "Cata-img-7" },
-  { imgUrl: eight, alt: "Cata-img-8" },
-  { imgUrl: nine, alt: "Cata-img-9" },
-  { imgUrl: ten, alt: "Cata-img-10" },
-  { imgUrl: eleven, alt: "Cata-img-11" },
-  { imgUrl: twelve, alt: "Cata-img-12" },
-  { imgUrl: thirteen, alt: "Cata-img-13" },
-  { imgUrl: fourteen, alt: "Cata-img-14" },
-  { imgUrl: fifteen, alt: "Cata-img-15" },
-  { imgUrl: sixteen, alt: "Cata-img-16" },
-  { imgUrl: seventeen, alt: "Cata-img-17" },
-  { imgUrl: eighteen, alt: "Cata-img-18" },
-  { imgUrl: nineteen, alt: "Cata-img-19" },
-  { imgUrl: twenty, alt: "Cata-img-20" },
-  { imgUrl: twentyone, alt: "Cata-img-21" },
-  { imgUrl: twentytwo, alt: "Cata-img-22" },
-  { imgUrl: twentythree, alt: "Cata-img-23" },
-  { imgUrl: twentyfour, alt: "Cata-img-24" },
-  { imgUrl: twentyfive, alt: "Cata-img-25" },
+  { imgUrl: zero1, alt: "Cata-img-1" },
+  { imgUrl: zero2, alt: "Cata-img-2" },
+  { imgUrl: zero3, alt: "Cata-img-3" },
+  { imgUrl: zero4, alt: "Cata-img-4" },
+  { imgUrl: zero5, alt: "Cata-img-5" },
+  { imgUrl: zero6, alt: "Cata-img-6" },
+  { imgUrl: zero7, alt: "Cata-img-7" },
+  { imgUrl: zero8, alt: "Cata-img-8" },
+  { imgUrl: zero9, alt: "Cata-img-9" },
+  { imgUrl: zero10, alt: "Cata-img-10" },
+  { imgUrl: zero11, alt: "Cata-img-11" },
+  { imgUrl: zero12, alt: "Cata-img-12" },
+  { imgUrl: zero13, alt: "Cata-img-13" },
+  { imgUrl: zero14, alt: "Cata-img-14" },
+  { imgUrl: zero15, alt: "Cata-img-15" },
+  { imgUrl: zero16, alt: "Cata-img-16" },
+  { imgUrl: zero17, alt: "Cata-img-17" },
+  { imgUrl: zero18, alt: "Cata-img-18" },
+  { imgUrl: zero19, alt: "Cata-img-19" },
+  { imgUrl: zero20, alt: "Cata-img-20" },
+  { imgUrl: zero21, alt: "Cata-img-21" },
+  { imgUrl: zero22, alt: "Cata-img-22" },
+  { imgUrl: zero23, alt: "Cata-img-23" },
+  { imgUrl: zero24, alt: "Cata-img-24" },
+  { imgUrl: zero25, alt: "Cata-img-25" },
+  { imgUrl: zero26, alt: "Cata-img-26" },
+  { imgUrl: zero27, alt: "Cata-img-27" },
+  { imgUrl: zero28, alt: "Cata-img-28" },
+  { imgUrl: zero29, alt: "Cata-img-29" },
+  { imgUrl: zero30, alt: "Cata-img-30" },
+  { imgUrl: zero31, alt: "Cata-img-31" },
+  { imgUrl: zero32, alt: "Cata-img-32" },
+  { imgUrl: zero33, alt: "Cata-img-33" },
+  { imgUrl: zero34, alt: "Cata-img-34" },
+  { imgUrl: zero35, alt: "Cata-img-35" },
+  { imgUrl: zero36, alt: "Cata-img-36" },
 ];
