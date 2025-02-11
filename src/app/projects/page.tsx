@@ -31,7 +31,8 @@ const Projects = (props: Props) => {
               title={info.title}
               body={info.body}
               imgURL={info.imgURL}
-              link={info.link}
+              videoLink={info.videoLink}
+              deploymentLink={info.deploymentLink}
             />
           ))}
         </div>

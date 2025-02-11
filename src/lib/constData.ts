@@ -24,7 +24,7 @@ export const ProjectInfo = [
     title: "Lustria",
     body: `Led a team of seven to create **Lustria**, an e-commerce platform dedicated to bringing plant nurseries online. With teamwork, creativity, and expert guidance, we built a seamless shopping experience for plant lovers.`,
     imgURL: Lustria,
-    link: "https://galactic-bits-nursery.vercel.app/",
+    deploymentLink: "https://galactic-bits-nursery.vercel.app/",
   },
   {
     heading: "Gift City Web",
@@ -33,28 +33,32 @@ export const ProjectInfo = [
                 hover effects, Framer Motion carousel with sound, and interactive
                 polls, enhancing UI/UX with React.`,
     imgURL: Gift,
-    link: "https://gift-city-web.vercel.app/",
+    deploymentLink: "https://gift-city-web.vercel.app/",
   },
   {
     heading: "Card Game",
     title: "Memory Game",
     body: `An interactive memory game where players flip and match cards while enjoying their favorite Spotify tracks. Built as a fun personal project to enhance engagement with music and gameplay!`,
     imgURL: MemoryGame,
-    link: "https://www.linkedin.com/posts/vishwang-suthar_madewithvue-react-personalproject-activity-7283394986195193857-bcfR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
+    deploymentLink: "https://memory-game-flax-six.vercel.app/",
+    videoLink:
+      "https://www.linkedin.com/posts/vishwang-suthar_madewithvue-react-personalproject-activity-7283394986195193857-bcfR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
   },
   {
     heading: "Fun Project",
     title: "CRT-TV",
     body: `A personal project featuring a 3D-styled button, a toggleable CRT TV, along with theme toggle,and interactive animations. Enhanced with sound effects using React’s useSound library and a creative image-based illusion, this project brings nostalgia with a modern twist!`,
     imgURL: CRTtv,
-    link: "https://crt-tv.vercel.app/",
+    deploymentLink: "https://crt-tv.vercel.app/",
   },
   {
     heading: "Hackathon Project",
     title: "Anomaly Detector",
     body: `Built an Anomaly Detection App using Streamlit and ADTK, leveraging multiple techniques to detect anomalies in time-series data. The app provides interactive visualizations and real-time insights for better data analysis.`,
     imgURL: Streamlit,
-    link: "https://www.linkedin.com/posts/vishwang-suthar_python-dataanalysis-anomalydetection-activity-7140781091807830017-88WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
+    deploymentLink: " https://pythondashboard01.streamlit.app/",
+    videoLink:
+      "https://www.linkedin.com/posts/vishwang-suthar_python-dataanalysis-anomalydetection-activity-7140781091807830017-88WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
   },
 ];
 
