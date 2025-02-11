@@ -5,16 +5,26 @@ import { Icons } from "@/lib/constData";
 import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
 import Link from "next/link";
+import Vidicon from "@/public/icons/video.svg";
+import WEbicon from "@/public/icons/site.svg";
 
 type Props = {
   heading: string;
   title: string;
-  body: string;
+  body?: string;
   imgURL: string;
-  link: string;
+  deploymentLink: string;
+  videoLink?: string;
 };
 
-const Projectcard = ({ heading, title, body, imgURL, link }: Props) => {
+const Projectcard = ({
+  heading,
+  title,
+  body,
+  imgURL,
+  deploymentLink,
+  videoLink,
+}: Props) => {
   return (
     <div className="flex flex-col border-2  border-black ">
       <div className="md:text-lg text-xs flex justify-between title border-b-2 border-black">
@@ -37,14 +47,8 @@ const Projectcard = ({ heading, title, body, imgURL, link }: Props) => {
           ))}
         </div>
       </div>{" "}
-      <Link
-        href={link}
-        className="block"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="body group cursor-pointer p-4 duration-500 overflow-hidden flex relative aspect-video">
-          {/* <div className="z-10 group-hover:bg-white duration-500 h-fit">
+      <div className="body group  p-4 duration-500 overflow-hidden flex relative aspect-video">
+        {/* <div className="z-10 group-hover:bg-white duration-500 h-fit">
           <p>Gift Connect </p>
         </div>
         <Image
@@ -56,30 +60,63 @@ const Projectcard = ({ heading, title, body, imgURL, link }: Props) => {
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         /> */}
-          <div className="z-10 gap-4 flex flex-col     h-fit">
-            <div className="flex justify-between  opacity-0 group-hover:opacity-100 duration-500 translate-y-4 group-hover:translate-y-0">
-              <p className=" w-fit font-semibold group-hover:bg-white duration-500">
-                {title}{" "}
-              </p>
-              <div className="p-1 group-hover:bg-white duration-500">
-                <Image src={Arrow} alt="link" className="h-4 w-4 rotate-90 " />
-              </div>
-            </div>
-            <p className="group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0 ">
-              {body}
+        <div className="z-10 gap-4 flex flex-col  w-full   h-fit">
+          <div className="flex justify-between  opacity-0 group-hover:opacity-100 duration-500 translate-y-4 group-hover:translate-y-0">
+            <p className=" w-fit font-semibold group-hover:bg-white duration-500">
+              {title}{" "}
             </p>
+            <div className="p-1 group-hover:bg-white duration-500">
+              <Image src={Arrow} alt="link" className="h-4 w-4 rotate-90 " />
+            </div>
           </div>
-          <Image
-            src={imgURL}
-            alt="Project-img"
-            className="absolute top-0 left-0 group-hover:blur-sm transition-all duration-500 ease-in-out z-0"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
-          />
-        </div>{" "}
-      </Link>
+          <div className="  flex gap-2 justify-between">
+            {videoLink && (
+              <Link
+                href={videoLink}
+                className="flex-1 block"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className=" w-full relative md:h-28 h-28 flex items-center justify-center   aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
+                  <Image
+                    src={Vidicon}
+                    alt="link to video"
+                    className=" md:h-16 md:w-16 h-6 w-6"
+                  />
+                </div>
+              </Link>
+            )}
+            <Link
+              href={deploymentLink} // Fallback to "#" if undefined (should never happen)
+              className="flex-1 justify-center"
+              target="_blank"
+              // className=""
+              rel="noopener noreferrer"
+            >
+              <div className="w-full relative md:h-28 h-28 flex items-center justify-center  aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
+                <Image
+                  src={WEbicon}
+                  alt="link to site"
+                  className=" md:h-16 md:w-16 h-6 w-6"
+                />
+              </div>
+            </Link>
+          </div>
+
+          {/* <p className="group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0 ">
+              {body}
+            </p> */}
+        </div>
+        <Image
+          src={imgURL}
+          alt="Project-img"
+          className="absolute top-0 left-0 group-hover:blur-sm transition-all duration-500 ease-in-out z-0"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
+      </div>{" "}
     </div>
   );
 };
