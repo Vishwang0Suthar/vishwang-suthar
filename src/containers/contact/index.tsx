@@ -6,7 +6,7 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <section className="py-56">
-      <div className="flex gap-6">
+      <div className="md:flex-row flex-col flex gap-6">
         <div className="flex-1">
           <h1 className="md:text-6xl  text-4xl">Get in touch!</h1>
           {/* <TextPressure textColor="black" text="Get in touch !" /> */}
