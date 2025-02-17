@@ -2,9 +2,7 @@
 import Collection from "@/containers/catalogue";
 import React, { useEffect, useState } from "react";
 
-type Props = {};
-
-const Catalogue = (props: Props) => {
+const Catalogue = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

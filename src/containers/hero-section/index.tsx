@@ -3,9 +3,8 @@ import Heroimg from "@/public/images/img-hero.jpg";
 import { nanum } from "@/ui/font";
 import TiltedCard from "@/components/TiltedCard/TiltedCard";
 import Brushstroke from "@/components/brushstroke";
-type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <section>
       <div className="flex h-[38rem] lg:flex-row flex-col gap-24 lg:gap-4">

@@ -1,9 +1,7 @@
-import TextPressure from "@/ui/TextPressure/TextPressure";
+// import TextPressure from "@/ui/TextPressure/TextPressure";
 import React from "react";
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
     <section className="py-56">
       <div className="md:flex-row flex-col flex gap-6">
