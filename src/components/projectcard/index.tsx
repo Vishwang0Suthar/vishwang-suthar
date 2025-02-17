@@ -3,7 +3,7 @@ import { Icons } from "@/lib/constData";
 import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
 import Link from "next/link";
-import Vidicon from "@/public/icons/video.svg";
+import Vidicon from "@/public/icons/vid-link.svg";
 import WEbicon from "@/public/icons/site.svg";
 
 type Props = {

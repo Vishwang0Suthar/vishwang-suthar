@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Volume from "@/public/icons/volume.svg";
-import Sun from "@/public/icons/sun.svg";
+import Sun from "@/public/icons/sun-toggle.svg";
 import Image from "next/image";
 
 const navItems = [
