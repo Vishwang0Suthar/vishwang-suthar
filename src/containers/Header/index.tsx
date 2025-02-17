@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-// import Volume from "@/public/icons/volume.svg";
-// import Sun from "@/public/icons/sun-toggle.svg";
-// import Image from "next/image";
+import Volume from "@/public/icons/volume.svg";
+import Sun from "@/public/icons/sun-toggle.svg";
+import Image from "next/image";
 
 const navItems = [
   { href: "/catalogue", label: "Catalogue" },
@@ -15,9 +15,9 @@ const Header = () => {
   return (
     <header className="border-t-2 z-50 bg-white border-b-2 sticky border-black w-full top-0 mt-2  h-16 ">
       <div className="flex justify-between border-r-2 border-l-2 border-black items-center divide-x-2  divide-black  h-full">
-        {/* <div className="aspect-square  flex items-center h-full justify-center ">
+        <div className="aspect-square  flex items-center h-full justify-center ">
           <Image src={Volume} alt="Volume Icon" className="h-8 w-8" />
-        </div> */}
+        </div>
         {navItems.map((item, index) => (
           <div
             key={index}
@@ -31,9 +31,9 @@ const Header = () => {
             </Link>
           </div>
         ))}
-        {/* <div className="aspect-square flex items-center h-full justify-center ">
+        <div className="aspect-square flex items-center h-full justify-center ">
           <Image src={Sun} alt="Sun Icon" className="h-8 w-8" />
-        </div> */}
+        </div>
       </div>
     </header>
   );
