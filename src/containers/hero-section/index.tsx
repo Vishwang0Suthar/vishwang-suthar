@@ -3,9 +3,8 @@ import Heroimg from "@/public/images/img-hero.jpg";
 import { nanum } from "@/ui/font";
 import TiltedCard from "@/components/TiltedCard/TiltedCard";
 import Brushstroke from "@/components/brushstroke";
-type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <section>
       <div className="flex h-[38rem] lg:flex-row flex-col gap-24 lg:gap-4">
@@ -14,7 +13,7 @@ const Hero = (props: Props) => {
             <h1 className="text-4xl font-semibold  ">
               Hey there this is <br />{" "}
               <span
-                className={`${nanum.className} relative text-6xl w-fit z-10`}
+                className={`${nanum.className} relative md:text-6xl text-5xl w-fit z-10`}
               >
                 Vishwang Suthar
               </span>
@@ -36,10 +35,10 @@ const Hero = (props: Props) => {
             imageSrc={Heroimg}
             altText="Cover"
             captionText="Dripy"
-            containerHeight="360px"
-            containerWidth="360px"
-            imageHeight="360px"
-            imageWidth="360px"
+            containerHeight="320px"
+            containerWidth="320px"
+            imageHeight="320px"
+            imageWidth="320px"
             rotateAmplitude={12}
             scaleOnHover={1.1}
             showMobileWarning={true}

@@ -3,9 +3,7 @@ import Projectcard from "@/components/projectcard";
 import React, { useEffect, useState } from "react";
 import { ProjectInfo } from "@/lib/constData";
 
-type Props = {};
-
-const Projects = (props: Props) => {
+const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
