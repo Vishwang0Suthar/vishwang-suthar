@@ -7,9 +7,10 @@ import ThumbnailPreview from "@/components/previmages";
 
 interface ImageModalProps {
   selectedIndex: number;
-  setSelectedIndex: (index: number) => void;
+  setSelectedIndex: React.Dispatch<React.SetStateAction<number | null>>;
   closeModal: () => void;
 }
+
 interface Metadata {
   ApertureValue?: number;
   ISO?: number;
@@ -24,6 +25,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
   closeModal,
 }) => {
   const [metadata, setMetadata] = useState<Metadata | null>(null);
+
   useEffect(() => {
     const extractMetadata = async () => {
       try {
@@ -46,11 +48,21 @@ const ImageModal: React.FC<ImageModalProps> = ({
   }, [selectedIndex]);
 
   const prevImage = () => {
-    setSelectedIndex((prev) => (prev === 0 ? Catalogue.length - 1 : prev - 1));
+    setSelectedIndex((prev: number | null) => {
+      // Since we're in the modal, we know prev won't be null here,
+      // but TypeScript doesn't know that, so we need to handle it
+      const currentIndex = prev === null ? 0 : prev;
+      return currentIndex === 0 ? Catalogue.length - 1 : currentIndex - 1;
+    });
   };
 
   const nextImage = () => {
-    setSelectedIndex((prev) => (prev === Catalogue.length - 1 ? 0 : prev + 1));
+    setSelectedIndex((prev: number | null) => {
+      // Since we're in the modal, we know prev won't be null here,
+      // but TypeScript doesn't know that, so we need to handle it
+      const currentIndex = prev === null ? 0 : prev;
+      return currentIndex === Catalogue.length - 1 ? 0 : currentIndex + 1;
+    });
   };
 
   return (
