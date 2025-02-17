@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
-// const { withStoreConfig } = require("./store-config")
-// const store = require("./store.config.json")
-
-module.exports = {
+const nextConfig = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
@@ -23,3 +20,5 @@ module.exports = {
     ],
   },
 };
+
+export default nextConfig;
