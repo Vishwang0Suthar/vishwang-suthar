@@ -3,19 +3,24 @@ import Image from "next/image";
 import info from "@/public/icons/info.svg";
 import close from "@/public/icons/close.svg";
 
+interface Metadata {
+  ApertureValue?: number;
+  ISO?: number;
+  ExposureTime?: number;
+  Model?: string;
+  DateTimeOriginal?: string | Date;
+}
+
 interface MetadataInfoProps {
-  metadata: any;
+  metadata: Metadata | null;
 }
 
 const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
   const [toggleInfo, setToggleInfo] = useState(false);
 
-  const formattedDate =
-    metadata.DateTimeOriginal instanceof Date
-      ? metadata.DateTimeOriginal.toLocaleDateString()
-      : metadata.DateTimeOriginal
-      ? new Date(metadata.DateTimeOriginal).toLocaleDateString()
-      : "Unknown";
+  const formattedDate = metadata?.DateTimeOriginal
+    ? new Date(metadata.DateTimeOriginal).toLocaleDateString()
+    : "Unknown";
 
   return (
     <div
@@ -27,28 +32,25 @@ const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
         className="min-h-20 items-center flex cursor-pointer"
         onClick={() => setToggleInfo(!toggleInfo)}
       >
-        <div className="rounded-full border-2 aspect-square flex h-6 items-center justify-center  border-black">
+        <div className="rounded-full border-2 aspect-square flex h-6 items-center justify-center border-black">
           <Image
             src={toggleInfo ? close : info}
-            //   className={` duration-300 ${toggleInfo ? "rotatSe-0 " : "rotate-0"}`}
-            className="duration-300 "
+            className="duration-300"
             alt="toggle-info"
           />
         </div>
       </div>
 
-      {/* {toggleInfo && ( */}
-      <div className="text-xs  md:text-base">
+      <div className="text-xs md:text-base">
         <p>
           Aperture: <span className="italic">f</span>{" "}
-          {metadata.ApertureValue || "N/A"}
+          {metadata?.ApertureValue ?? "N/A"}
         </p>
-        <p>ISO: {metadata.ISO || "N/A"}</p>
-        <p>Shutter-Speed: {metadata.ExposureTime || "N/A"}</p>
-        <p>Camera: {metadata.Model || "Unknown"}</p>
+        <p>ISO: {metadata?.ISO ?? "N/A"}</p>
+        <p>Shutter-Speed: {metadata?.ExposureTime ?? "N/A"}</p>
+        <p>Camera: {metadata?.Model ?? "Unknown"}</p>
         <p>Date: {formattedDate}</p>
       </div>
-      {/* )} */}
     </div>
   );
 };

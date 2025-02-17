@@ -1,6 +1,4 @@
-import { audio } from "framer-motion/client";
 import Image from "next/image";
-import Gift from "@/public/images/projects-thumbnails/gift-city.png";
 import { Icons } from "@/lib/constData";
 import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
@@ -20,7 +18,7 @@ type Props = {
 const Projectcard = ({
   heading,
   title,
-  body,
+  // body,
   imgURL,
   deploymentLink,
   videoLink,
@@ -29,7 +27,7 @@ const Projectcard = ({
     <div className="flex flex-col border-2  border-black ">
       <div className="md:text-lg text-xs flex justify-between title border-b-2 border-black">
         <div className="flex">
-          <p>//C:</p>
+          <p> {`//C:`}</p>
           <p className="">{heading}</p>
         </div>
         <div className="flex items-center gap-2 p-1">
