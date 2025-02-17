@@ -10,14 +10,20 @@ interface ImageModalProps {
   setSelectedIndex: (index: number) => void;
   closeModal: () => void;
 }
+interface Metadata {
+  ApertureValue?: number;
+  ISO?: number;
+  ExposureTime?: number;
+  Model?: string;
+  DateTimeOriginal?: string | Date;
+}
 
 const ImageModal: React.FC<ImageModalProps> = ({
   selectedIndex,
   setSelectedIndex,
   closeModal,
 }) => {
-  const [metadata, setMetadata] = useState<any>(null);
-
+  const [metadata, setMetadata] = useState<Metadata | null>(null);
   useEffect(() => {
     const extractMetadata = async () => {
       try {

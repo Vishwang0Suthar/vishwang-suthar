@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface TextPressureProps {
   text?: string;
@@ -84,7 +84,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
     };
   }, []);
 
-  const setSize = () => {
+  const setSize = useCallback(() => {
     if (!containerRef.current || !titleRef.current) return;
 
     const { width: containerW, height: containerH } =
@@ -107,7 +107,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
         setLineHeight(yRatio);
       }
     });
-  };
+  }, [chars.length, minFontSize, scale]);
 
   useEffect(() => {
     setSize();
