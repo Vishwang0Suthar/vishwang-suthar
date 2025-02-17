@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Icons } from "@/lib/constData";
 import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
@@ -10,7 +10,7 @@ type Props = {
   heading: string;
   title: string;
   body?: string;
-  imgURL: string;
+  imgURL: StaticImageData;
   deploymentLink: string;
   videoLink?: string;
 };
