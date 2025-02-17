@@ -1,6 +1,5 @@
-"use client";
-import Image from "next/image";
 import React, { useState } from "react";
+import Image from "next/image";
 import { Catalogue } from "@/lib/constData";
 import ImageModal from "@/containers/modal/imagemodal";
 
@@ -40,7 +39,7 @@ const Collection = () => {
       {selectedIndex !== null && (
         <ImageModal
           selectedIndex={selectedIndex}
-          setSelectedIndex={setSelectedIndex}
+          setSelectedIndex={setSelectedIndex} // `setSelectedIndex` is now compatible with `number | null`
           closeModal={closeModal}
         />
       )}
