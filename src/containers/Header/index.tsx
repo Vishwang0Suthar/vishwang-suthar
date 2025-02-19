@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
-// import Volume from "@/public/icons/volume.svg";
+import Volume from "@/public/icons/volume.svg";
 import Sun from "@/public/icons/sun-toggle.svg";
-// import Image from "next/image";
+import Image from "next/image";
 
 const navItems = [
   { href: "/catalogue", label: "Catalogue" },
@@ -32,7 +32,7 @@ const Header = () => {
           </div>
         ))}
         <div className="aspect-square flex items-center h-full justify-center ">
-          <Sun />
+          <Image src={Sun} alt="Sun Icon" className="h-8 w-8" />
         </div>
       </div>
     </header>
