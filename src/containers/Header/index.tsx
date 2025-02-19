@@ -32,7 +32,11 @@ const Header = () => {
           </div>
         ))}
         <div className="aspect-square flex items-center h-full justify-center ">
-          <Image src={Sun} alt="Sun Icon" className="h-8 w-8" />
+          <Image
+            src="/icons/sun-toggle.svg"
+            alt="Sun Icon"
+            className="h-8 w-8"
+          />
         </div>
       </div>
     </header>
