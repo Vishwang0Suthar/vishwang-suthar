@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { Icons } from "@/lib/constData";
-import Arrow from "@/public/icons/arrow.svg";
+// import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
 import Link from "next/link";
 
@@ -62,7 +62,13 @@ const Projectcard = ({
               {title}{" "}
             </p>
             <div className="p-1 group-hover:bg-white duration-500">
-              <Image src={Arrow} alt="link" className="h-4 w-4 rotate-90 " />
+              <Image
+                src="/icons/arrow.svg"
+                alt="link"
+                className="h-4 w-4 rotate-90 "
+                height={100}
+                width={100}
+              />
             </div>
           </div>
           <div className="  flex gap-2 justify-between">
@@ -77,6 +83,8 @@ const Projectcard = ({
                   <Image
                     src="/icons/vid-link.svg"
                     alt="link to video"
+                    height={100}
+                    width={100}
                     className=" md:h-16 md:w-16 h-6 w-6"
                   />
                 </div>
@@ -94,6 +102,8 @@ const Projectcard = ({
                   src="/icons/site.svg"
                   alt="link to site"
                   className=" md:h-16 md:w-16 h-6 w-6"
+                  height={100}
+                  width={100}
                 />
               </div>
             </Link>
