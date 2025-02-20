@@ -22,12 +22,13 @@ const Collection = () => {
         <div
           key={index}
           onClick={() => openModal(index)}
-          className="cursor-pointer overflow-hidden"
+          className="cursor-pointer hover:saturate-100 saturate-0 duration-500 overflow-hidden"
         >
           <Image
             src={data.imgUrl}
             alt={data.alt}
-            className="hover:brightness-110 hover:saturate-100 saturate-0 hover:scale-105 duration-500 transition-all"
+            className="hover:brightness-110  hover:scale-105 duration-500 transition-all"
+            loading="lazy"
             width={0}
             height={0}
             sizes="100vw"
