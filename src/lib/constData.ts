@@ -1,21 +1,19 @@
-import Minimize from "@/public/icons/minimize.svg";
-import Restore from "@/public/icons/restore.svg";
-import Close from "@/public/icons/close.svg";
+import Minimize from "@/assets/icons/minimize.svg";
+import Restore from "@/assets/icons/restore.svg";
+import Close from "@/assets/icons/close.svg";
 import Gift from "@/public/images/projects-thumbnails/gift-city.png";
 import MemoryGame from "@/public/images/projects-thumbnails/memory-game.png";
 import CRTtv from "@/public/images/projects-thumbnails/crt-tv-2.png";
 import Streamlit from "@/public/images/projects-thumbnails/streamlit.png";
 import Lustria from "@/public/images/projects-thumbnails/Lustria.png";
+
 export const Icons = [
   {
-    icon: Minimize,
+    Icon: Minimize,
     alt: "minimize icon",
   },
-  { icon: Restore, alt: "restore icon" },
-  {
-    icon: Close,
-    alt: "close icon",
-  },
+  { Icon: Restore, alt: "restore icon" },
+  { Icon: Close, alt: "close icon" },
 ];
 
 export const ProjectInfo = [

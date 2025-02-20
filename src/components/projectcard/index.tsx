@@ -29,16 +29,12 @@ const Projectcard = ({
           <p className="">{heading}</p>
         </div>
         <div className="flex items-center gap-2 p-1">
-          {Icons.map((item, index) => (
+          {Icons.map(({ Icon, alt }, index) => (
             <div
               key={index}
               className="aspect-square h-full grid place-content-center hover:bg-gray-300"
             >
-              <Image
-                src={item.icon}
-                alt={item.alt}
-                className="md:h-4 md:w-4 h-2 w-2"
-              />
+              <Icon className="md:h-4 md:w-4 h-2 w-2" aria-label={alt} />
             </div>
           ))}
         </div>
