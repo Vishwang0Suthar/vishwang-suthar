@@ -3,8 +3,6 @@ import { Icons } from "@/lib/constData";
 import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
 import Link from "next/link";
-import Vidicon from "@/public/icons/vid-link.svg";
-import WEbicon from "@/public/icons/site.svg";
 
 type Props = {
   heading: string;
@@ -77,7 +75,7 @@ const Projectcard = ({
               >
                 <div className=" w-full relative md:h-28 h-28 flex items-center justify-center   aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
                   <Image
-                    src={Vidicon}
+                    src="/icons/vid-link.svg"
                     alt="link to video"
                     className=" md:h-16 md:w-16 h-6 w-6"
                   />
@@ -93,7 +91,7 @@ const Projectcard = ({
             >
               <div className="w-full relative md:h-28 h-28 flex items-center justify-center  aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
                 <Image
-                  src={WEbicon}
+                  src="/icons/site.svg"
                   alt="link to site"
                   className=" md:h-16 md:w-16 h-6 w-6"
                 />
