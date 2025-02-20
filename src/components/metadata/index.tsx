@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import info from "@/public/icons/info.svg";
-import close from "@/public/icons/close.svg";
 
 interface Metadata {
   ApertureValue?: number;
@@ -34,7 +32,7 @@ const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
       >
         <div className="rounded-full border-2 aspect-square flex h-6 items-center justify-center border-black">
           <Image
-            src={toggleInfo ? close : info}
+            src={toggleInfo ? "/icons/close.svg" : "/icons/info.svg"}
             className="duration-300"
             alt="toggle-info"
           />
