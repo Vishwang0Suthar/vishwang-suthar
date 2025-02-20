@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const navItems = [
   { href: "/catalogue", label: "Catalogue" },
-
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
 ];
@@ -36,6 +35,8 @@ const Header = () => {
             src="/icons/sun-toggle.svg"
             alt="Sun Icon"
             className="h-8 w-8"
+            width="100"
+            height="100"
           />
         </div>
       </div>
