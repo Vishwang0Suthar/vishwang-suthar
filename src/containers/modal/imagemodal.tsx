@@ -85,13 +85,15 @@ const ImageModal: React.FC<ImageModalProps> = ({
         setSelectedIndex={setSelectedIndex}
       />
 
+      {/* <div className="bg-white flex items-center  justify-center  p-4 pb-12 md:pb-24"> */}
       <Image
         src={Catalogue[selectedIndex].imgUrl}
         alt={Catalogue[selectedIndex].alt}
-        className="md:max-w-[90vw] max-w-[70vw] flex-1 md:max-h-[80vh] max-h-[70vh] object-contain"
-        width={800}
-        height={600}
+        className="md:max-w-[90vw] max-w-[70vw] w-fit md:max-h-[80vh] max-h-[70vh] object-contain"
+        width={720}
+        height={560}
       />
+      {/* </div> */}
 
       <button
         onClick={nextImage}

@@ -4,6 +4,12 @@ import { Icons } from "@/lib/constData";
 import React from "react";
 import Link from "next/link";
 
+const Colors = [
+  { Color: "bg-red-600" },
+  { Color: "bg-yellow-600" },
+  { Color: "bg-green-600" },
+];
+
 type Props = {
   heading: string;
   title: string;
@@ -37,6 +43,12 @@ const Projectcard = ({
               <Icon className="md:h-4 md:w-4 h-2 w-2" aria-label={alt} />
             </div>
           ))}
+          {/* {Colors.map((Col, index) => (
+            <div
+              key={index}
+              className={`rounded-full md:h-3 md:w-3 h-2 w-2 ${Col.Color}`}
+            ></div>
+          ))} */}
         </div>
       </div>{" "}
       <div className="body group  p-4 duration-500 overflow-hidden flex relative aspect-video">
@@ -54,7 +66,7 @@ const Projectcard = ({
         /> */}
         <div className="z-10 gap-4 flex flex-col  w-full   h-fit">
           <div className="flex justify-between  opacity-0 group-hover:opacity-100 duration-500 translate-y-4 group-hover:translate-y-0">
-            <p className=" w-fit font-semibold group-hover:bg-white duration-500">
+            <p className="px-1 w-fit font-semibold group-hover:bg-white duration-500">
               {title}{" "}
             </p>
             <div className="p-1 group-hover:bg-white duration-500">
