@@ -35,6 +35,8 @@ const MetadataInfo: React.FC<MetadataInfoProps> = ({ metadata }) => {
             src={toggleInfo ? "/icons/close.svg" : "/icons/info.svg"}
             className="duration-300"
             alt="toggle-info"
+            height={100}
+            width={100}
           />
         </div>
       </div>
