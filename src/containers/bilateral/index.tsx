@@ -2,6 +2,9 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import SplitType from "split-type";
+import Link from "next/link";
+import CursorFollower from "@/components/customCursor";
+import Image from "next/image";
 
 const Bilat = () => {
   const textRef1 = useRef<HTMLParagraphElement>(null);
@@ -46,16 +49,43 @@ const Bilat = () => {
   }, []);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex  h-screen">
+      {/* <CursorFollower /> */}
       {/* Left Side with First Animated Text */}
-      <div className="flex-1 bg-white hover:cursor-pointer grid place-content-center">
-        <p ref={textRef1} className="text-4xl font-bold"></p>
-      </div>
+      <Link
+        className="flex-1 grid place-content-center group relative bg-white "
+        href="/catalogue"
+      >
+        <Image
+          height={100}
+          alt="arrow"
+          width={100}
+          className="h-7  rotate-90 group-hover:opacity-100 opacity-0 duration-500 translate-y-10 group-hover:translate-y-0 absolute top-8 right-0  aspect-square "
+          src="/icons/arrow.svg"
+        />
+        <div className=" text-black ">
+          <p ref={textRef1} className="text-4xl font-bold"></p>
+        </div>
+      </Link>
 
       {/* Right Side with Second Animated Text */}
-      <div className="flex-1 bg-black hover:cursor-pointer grid place-content-center text-white">
-        <p ref={textRef2} className="text-4xl font-bold"></p>
-      </div>
+      <Link
+        className="flex-1 bg-black grid place-content-center group relative"
+        href="/projects"
+      >
+        <>
+          <Image
+            height={100}
+            alt="arrow"
+            width={100}
+            className="h-7 invert rotate-90 group-hover:opacity-100 opacity-0 duration-500 translate-y-10 group-hover:translate-y-0 absolute top-8 right-0  aspect-square "
+            src="/icons/arrow.svg"
+          />
+          <div className=" text-white">
+            <p ref={textRef2} className="text-4xl font-bold"></p>
+          </div>
+        </>
+      </Link>
     </div>
   );
 };
