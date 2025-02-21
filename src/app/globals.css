@@ -7,6 +7,9 @@
   color: white;
 }
 
+
+
+
 @layer base {
 
   header,
@@ -19,6 +22,8 @@
     @apply py-10;
   }
 }
+
+
 
 @layer components {
   .px-container {
