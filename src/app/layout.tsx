@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ibmMono.className}  antialiased`}>
-        <Header />
+        {/* <Header /> */}
         {/* <ThemeProvider
           attribute="class"
           defaultTheme="light"
