@@ -89,7 +89,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
       <Image
         src={Catalogue[selectedIndex].imgUrl}
         alt={Catalogue[selectedIndex].alt}
-        className="md:max-w-[90vw] max-w-[70vw] w-fit md:max-h-[80vh] max-h-[70vh] object-contain"
+        className="md:max-w-[90vw] max-w-[70vw] w-fit md:min-h-[80vh] min-h-[70vh] object-contain"
         width={720}
         height={560}
       />
