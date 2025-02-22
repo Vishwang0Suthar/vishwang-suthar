@@ -2,6 +2,7 @@
 import Projectcard from "@/components/projectcard";
 import React, { useEffect, useState } from "react";
 import { ProjectInfo } from "@/lib/constData";
+import ProjectList from "@/components/projectlist";
 
 const Project = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,9 @@ const Project = () => {
       </div>
       // </>
     )} */}
+      <div className="divide-y-2 divide-white flex flex-col">
+        <ProjectList />
+      </div>
     </section>
   );
 };

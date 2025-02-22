@@ -60,6 +60,36 @@ export const ProjectInfo = [
   },
 ];
 
+//project export 2
+
+export const demoItems = [
+  {
+    link: "https://galactic-bits-nursery.vercel.app/",
+    text: "Lustria",
+    image: Lustria.src,
+  },
+  {
+    link: "https://gift-city-web.vercel.app/",
+    text: "Gift Connect",
+    image: Gift.src,
+  },
+  {
+    link: "https://memory-game-flax-six.vercel.app/",
+    text: "Memory Game",
+    image: MemoryGame.src,
+  },
+  {
+    link: "https://crt-tv.vercel.app/",
+    text: "CRT-TV",
+    image: CRTtv.src,
+  },
+  {
+    link: "https://pythondashboard01.streamlit.app/",
+    text: "Anomaly Detector",
+    image: Streamlit.src,
+  },
+];
+
 // images import
 
 import zero1 from "@/public/images/catalogue/0 (1).jpg";

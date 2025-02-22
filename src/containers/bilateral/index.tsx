@@ -24,7 +24,7 @@ const Bilat = () => {
       {/* Catalogue Section */}
       <div
         onClick={() => handleClick("catalogue")}
-        className={`relative py-20  group grid place-content-start cursor-pointer transition-all duration-700 ease-in-out ${
+        className={`relative py-20  group grid place-content-start cursor-pointer transition-all duration-500 ease-in-out ${
           selected === "catalogue"
             ? "w-full px-container"
             : selected === "projects"
@@ -39,7 +39,7 @@ const Bilat = () => {
           className="h-7 rotate-90 opacity-0 transition-all duration-500 translate-y-10 group-hover:translate-y-0 absolute top-8 right-0 aspect-square"
           src="/icons/arrow.svg"
         />
-        <div className="text-black">
+        <div className="text-black flex gap-4 flex-col">
           <p
             className={` ${
               selected === "projects"
@@ -51,13 +51,21 @@ const Bilat = () => {
           >
             Catalogue
           </p>
+          {/* <p className="absolute top-1/2 left-1/2 -translate-x-1/2 group-hover:opacity-100 opacity-0 text-8xl duration-300 font-thin place-self-center ">{``}</p> */}
+          <Image
+            src="/icons/camera.svg"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0  duration-300  place-self-center"
+            alt="camera"
+            height={140}
+            width={140}
+          />
         </div>
       </div>
 
       {/* Projects Section */}
       <div
         onClick={() => handleClick("projects")}
-        className={`relative py-20  group grid place-content-start cursor-pointer transition-all duration-700 ease-in-out ${
+        className={`relative py-20  group grid place-content-start cursor-pointer transition-all duration-500 ease-in-out ${
           selected === "projects"
             ? "w-full px-container"
             : selected === "catalogue"
@@ -72,7 +80,7 @@ const Bilat = () => {
           className="h-7 invert rotate-90 opacity-0 transition-all duration-500 translate-y-10 group-hover:translate-y-0 absolute top-8 right-0 aspect-square"
           src="/icons/arrow.svg"
         />
-        <div className="text-white">
+        <div className="text-white flex gap-4 flex-col">
           <p
             className={` ${
               selected === "projects"
@@ -84,6 +92,7 @@ const Bilat = () => {
           >
             Projects
           </p>
+          <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 text-8xl duration-300 font-thin place-self-center ">{`</>`}</p>
         </div>
       </div>
     </div>
