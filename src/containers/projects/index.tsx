@@ -17,7 +17,7 @@ const Project = () => {
     <section>
       {/* // </div> */}
       {/* // <> */}
-      <h1 className="text-6xl py-10 text-white">Projects</h1>
+      <h1 className="md:text-6xl py-10 text-white">Projects</h1>
       {/* {isLoading ? (
       // <div className="h-64 grid place-items-center ">
       <div className="loader absolute top-1/2 left-1/2"></div>

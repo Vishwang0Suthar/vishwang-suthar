@@ -77,6 +77,8 @@ export const demoItems = [
     link: "https://memory-game-flax-six.vercel.app/",
     text: "Memory Game",
     image: MemoryGame.src,
+    videoLink:
+      "https://www.linkedin.com/posts/vishwang-suthar_madewithvue-react-personalproject-activity-7283394986195193857-bcfR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
   },
   {
     link: "https://crt-tv.vercel.app/",
@@ -87,6 +89,8 @@ export const demoItems = [
     link: "https://pythondashboard01.streamlit.app/",
     text: "Anomaly Detector",
     image: Streamlit.src,
+    videoLink:
+      "https://www.linkedin.com/posts/vishwang-suthar_python-dataanalysis-anomalydetection-activity-7140781091807830017-88WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpd5AoBdy82dRT21N2OF-pVUldMCWA-9kk",
   },
 ];
 

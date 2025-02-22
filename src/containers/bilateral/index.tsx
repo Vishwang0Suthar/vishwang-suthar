@@ -54,7 +54,7 @@ const Bilat = () => {
           {/* <p className="absolute top-1/2 left-1/2 -translate-x-1/2 group-hover:opacity-100 opacity-0 text-8xl duration-300 font-thin place-self-center ">{``}</p> */}
           <Image
             src="/icons/camera.svg"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0  duration-300  place-self-center"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0  duration-500  place-self-center"
             alt="camera"
             height={140}
             width={140}
@@ -92,7 +92,7 @@ const Bilat = () => {
           >
             Projects
           </p>
-          <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 text-8xl duration-300 font-thin place-self-center ">{`</>`}</p>
+          <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0 text-8xl duration-500 font-thin place-self-center ">{`</>`}</p>
         </div>
       </div>
     </div>

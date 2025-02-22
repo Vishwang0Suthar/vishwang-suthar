@@ -6,7 +6,7 @@ import Brushstroke from "@/components/brushstroke";
 
 const Hero = () => {
   return (
-    <section>
+    <section className="min-h-screen">
       <div className="flex h-[38rem] lg:flex-row flex-col gap-24 lg:gap-4">
         <div className="flex-1 flex  items-center justify-center lg:justify-start pl-0 p-6">
           <div className="flex flex-col ">
