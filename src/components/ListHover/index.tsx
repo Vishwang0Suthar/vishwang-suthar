@@ -68,13 +68,18 @@ const ListHover: React.FC<FlowingMenuProps> = ({ items = [] }) => {
             </Link>
           </div>
           {!isMobile && (
-            <Image
-              width={300}
-              height={300}
-              alt={item.text}
+            <Link
+              href={item.link}
               className="opacity-0 translate-y-2 group-hover:scale-125 bg-white p-2 group-hover:translate-y-0 left-1/2 -translate-x-1/2 z-10 group-hover:opacity-100 duration-500 absolute"
-              src={item.image}
-            />
+              target="_blank"
+            >
+              <Image
+                width={300}
+                height={300}
+                alt={item.text}
+                src={item.image}
+              />
+            </Link>
           )}
         </div>
       ))}
