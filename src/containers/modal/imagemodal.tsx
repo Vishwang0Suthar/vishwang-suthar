@@ -68,7 +68,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center backdrop-blur-sm bg-black bg-opacity-80 z-50">
       <button
-        className="absolute top-5 right-5 text-white text-xl md:text-3xl"
+        className="absolute top-8 translate-y-1/2 right-5 text-white text-xl md:text-3xl"
         onClick={closeModal}
       >
         ✕
@@ -89,7 +89,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
       <Image
         src={Catalogue[selectedIndex].imgUrl}
         alt={Catalogue[selectedIndex].alt}
-        className="md:max-w-[90vw] max-w-[70vw] w-fit md:max-h-[80vh] max-h-[70vh] object-contain"
+        className="md:max-w-[90vw] max-w-[70vw] w-fit md:max-h-[70vh] max-h-[60vh] mt-10 object-contain"
         width={720}
         height={560}
       />

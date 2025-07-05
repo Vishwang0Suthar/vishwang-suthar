@@ -12,7 +12,7 @@ const ThumbnailPreview: React.FC<ThumbnailPreviewProps> = ({
   setSelectedIndex,
 }) => {
   return (
-    <div className="flex gap-2 my-4 duration-300 items-center justify-center relative">
+    <div className="flex fixed gap-2 my-4 duration-300 items-center justify-center top-8">
       <div className="absolute border-2 md:w-16 md:h-16 w-12 h-12 border-white"></div>
       {[-3, -2, -1, 0, 1, 2, 3].map((offset) => {
         const previewIndex =

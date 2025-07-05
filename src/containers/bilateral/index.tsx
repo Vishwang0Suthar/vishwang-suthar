@@ -20,7 +20,7 @@ const Bilat = () => {
   };
 
   return (
-    <div className="flex h-screen w-full transition-all duration-700 ease-in-out">
+    <div className="flex h-screen select-none- w-full transition-all duration-700 ease-in-out">
       {/* Catalogue Section */}
       <div
         onClick={() => handleClick("catalogue")}
