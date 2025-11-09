@@ -37,7 +37,7 @@ const Projectcard = ({
       }`}
     >
       <div
-        className={`md:text-lg text-xs flex justify-between title border-b-2 ${
+        className={`md:text-lg text-xs flex justify-between items-center title border-b-2 ${
           isDark ? "border-black" : "border-white"
         }`}
       >
