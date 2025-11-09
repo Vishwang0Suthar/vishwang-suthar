@@ -3,6 +3,7 @@ import { Icons } from "@/lib/constData";
 // import Arrow from "@/public/icons/arrow.svg";
 import React from "react";
 import Link from "next/link";
+import { useTheme } from "../ThemeContext";
 
 const Colors = [
   { Color: "bg-red-600" },
@@ -27,20 +28,36 @@ const Projectcard = ({
   deploymentLink,
   videoLink,
 }: Props) => {
+  const { isDark } = useTheme();
+
   return (
-    <div className="flex flex-col border-2  border-black ">
-      <div className="md:text-lg text-xs flex justify-between title border-b-2 border-black">
+    <div
+      className={`flex flex-col border-2 ${
+        isDark ? "border-black" : "border-white"
+      }`}
+    >
+      <div
+        className={`md:text-lg text-xs flex justify-between title border-b-2 ${
+          isDark ? "border-black" : "border-white"
+        }`}
+      >
         <div className="flex">
           <p> {`//C:`}</p>
           <p className="">{heading}</p>
         </div>
-        <div className="flex items-center gap-2 p-1">
+        <div className="flex cursor-pointer items-center gap-2 p-1">
           {Icons.map(({ Icon, alt }, index) => (
             <div
               key={index}
               className="aspect-square h-full grid place-content-center hover:bg-gray-300"
             >
-              <Icon className="md:h-4 md:w-4 h-2 w-2" aria-label={alt} />
+              <Image
+                src={Icon}
+                alt={alt}
+                className={`${isDark ? "invert-0" : "invert"}`}
+                width={16}
+                height={16}
+              />
             </div>
           ))}
           {/* {Colors.map((Col, index) => (
@@ -64,9 +81,13 @@ const Projectcard = ({
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         /> */}
-        <div className="z-10 gap-4 flex flex-col  w-full   h-fit">
+        <div
+          className={`z-10  gap-4 flex flex-col  w-full   h-fit ${
+            isDark ? "invert-0" : "invert"
+          }`}
+        >
           <div className="flex justify-between  opacity-0 group-hover:opacity-100 duration-500 translate-y-4 group-hover:translate-y-0">
-            <p className="px-1 w-fit font-semibold group-hover:bg-white duration-500">
+            <p className="px-1 w-fit font-semibold text-black group-hover:bg-white duration-500">
               {title}{" "}
             </p>
             <div className="p-1 group-hover:bg-white duration-500">
