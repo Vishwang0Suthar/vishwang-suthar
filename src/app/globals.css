@@ -37,6 +37,19 @@
   }
 }
 
+.black {
+  background-color: #000;
+  color: #fff;
+  /* optional: ensure text is visible */
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+  /* optional: ensure text contrast */
+}
+
+
 .loader {
   width: 50px;
   aspect-ratio: 1;

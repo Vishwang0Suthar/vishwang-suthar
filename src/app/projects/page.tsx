@@ -2,6 +2,7 @@
 import Projectcard from "@/components/projectcard";
 import React, { useEffect, useState } from "react";
 import { ProjectInfo } from "@/lib/constData";
+import { useTheme } from "@/components/ThemeContext";
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,9 +12,12 @@ const Projects = () => {
     const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
+  const { isDark } = useTheme();
 
   return (
-    <section>
+    <section
+      className={`${isDark ? "bg-white text-black" : "bg-black text-white"}`}
+    >
       {/* // </div> */}
       {/* // <> */}
       <h1 className="text-6xl py-10">Projects</h1>

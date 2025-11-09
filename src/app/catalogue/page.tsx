@@ -1,4 +1,5 @@
 "use client";
+import { useTheme } from "@/components/ThemeContext";
 import Collection from "@/containers/catalogue";
 import React, { useEffect, useState } from "react";
 
@@ -10,8 +11,16 @@ const Catalogue = () => {
     const timer = setTimeout(() => setIsLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
+  const { isDark } = useTheme();
+
   return (
-    <section>
+    <section
+      className={`${
+        isDark
+          ? "bg-white text-black border-black"
+          : "bg-black text-white border-white"
+      }`}
+    >
       <h1 className="text-6xl py-10">Catalogue</h1>
       {isLoading ? (
         <div className="loader absolute top-1/2 left-1/2"></div>

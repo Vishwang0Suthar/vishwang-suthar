@@ -3,10 +3,13 @@ import Heroimg from "@/public/images/img-hero.jpg";
 import { nanum } from "@/ui/font";
 import TiltedCard from "@/components/TiltedCard/TiltedCard";
 import Brushstroke from "@/components/brushstroke";
+import { useTheme } from "@/components/ThemeContext";
 
 const Hero = () => {
+  const { isDark } = useTheme();
+
   return (
-    <section>
+    <section className={` ${isDark ? "text-black" : "text-white"}`}>
       <div className="flex h-[38rem] lg:flex-row flex-col gap-24 lg:gap-4">
         <div className="flex-1 flex  items-center justify-center lg:justify-start pl-0 p-6">
           <div className="flex flex-col ">
