@@ -37,7 +37,7 @@ const Projectcard = ({
       }`}
     >
       <div
-        className={`md:text-lg text-xs flex justify-between items-center title border-b-2 ${
+        className={`md:text-lg p-2 text-xs flex justify-between items-center title border-b-2 ${
           isDark ? "border-black" : "border-white"
         }`}
       >
@@ -86,7 +86,7 @@ const Projectcard = ({
             isDark ? "invert-0" : "invert"
           }`}
         >
-          <div className="flex justify-between  opacity-0 group-hover:opacity-100 duration-500 translate-y-4 group-hover:translate-y-0">
+          <div className="flex justify-between opacity-0 group-hover:opacity-100 duration-500 translate-y-4 group-hover:translate-y-0">
             <p className="px-1 w-fit font-semibold text-black group-hover:bg-white duration-500">
               {title}{" "}
             </p>

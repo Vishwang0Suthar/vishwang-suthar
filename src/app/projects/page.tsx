@@ -20,10 +20,14 @@ const Projects = () => {
     >
       {/* // </div> */}
       {/* // <> */}
-      <h1 className="text-6xl py-10">Projects</h1>
+      <h1 className="text-6xl py-10 px-0">Projects</h1>
       {isLoading ? (
         // <div className="h-64 grid place-items-center ">
-        <div className="loader absolute top-1/2 left-1/2"></div>
+        <div
+          className={`${
+            isDark ? "loader-night" : "loader-day"
+          } absolute top-1/2 left-1/2`}
+        ></div>
       ) : (
         <div className="carousell grid lg:grid-cols-3 lg:gap-8 gap-4 md:grid-cols-2 grid-cols-1">
           {ProjectInfo.map((info, index) => (
