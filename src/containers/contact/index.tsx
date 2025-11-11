@@ -1,5 +1,6 @@
 // import TextPressure from "@/ui/TextPressure/TextPressure";
 import { useTheme } from "@/components/ThemeContext";
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
@@ -8,8 +9,17 @@ const Contact = () => {
   return (
     <section className={`py-56 ${isDark ? "text-black" : "text-white"}`}>
       <div className="md:flex-row flex-col flex gap-6">
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
           <h1 className="text-4xl">Get in touch!</h1>
+          <Image
+            src="/images/plane-graphics-3.png"
+            alt="Plane png"
+            className={`${
+              isDark ? "invert-0" : "invert"
+            } invert h-auto w-auto `}
+            width="1200"
+            height="800"
+          />
           {/* <TextPressure textColor="black" text="Get in touch !" /> */}
         </div>
         <div className="flex-1">

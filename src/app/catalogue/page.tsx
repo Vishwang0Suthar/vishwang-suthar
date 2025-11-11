@@ -23,7 +23,11 @@ const Catalogue = () => {
     >
       <h1 className="text-6xl py-10">Catalogue</h1>
       {isLoading ? (
-        <div className="loader absolute top-1/2 left-1/2"></div>
+        <div
+          className={`${
+            isDark ? "loader-night" : "loader-day"
+          } absolute top-1/2 left-1/2`}
+        ></div>
       ) : (
         <Collection />
       )}

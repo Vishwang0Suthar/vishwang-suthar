@@ -1,10 +1,12 @@
+// layout.tsx (Server Component)
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/containers/Header";
 import { ThemeProvider } from "@/components/ThemeContext";
+import ThemedBody from "@/components/ThemedBody";
+
 const ibmMono = IBM_Plex_Mono({
-  // variable: "--font-ibm-plex-mono",
   weight: "400",
   subsets: ["latin"],
 });
@@ -16,16 +18,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={`${ibmMono.className}  antialiased`}>
+        <ThemedBody className={`${ibmMono.className} antialiased`}>
           <Header />
           {children}
-        </body>
+        </ThemedBody>
       </ThemeProvider>
     </html>
   );
