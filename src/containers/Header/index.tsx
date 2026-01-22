@@ -37,7 +37,7 @@ const Header = () => {
         >
           <div
             onClick={toggleMute}
-            className="aspect-square  flex items-center h-full justify-center "
+            className="aspect-square cursor-pointer flex items-center h-full justify-center "
           >
             {mute ? (
               <Image
@@ -77,9 +77,8 @@ const Header = () => {
           ))}
 
           <div
-            className="aspect-square flex items-center h-full justify-center "
+            className="aspect-square cursor-pointer flex items-center h-full justify-center "
             onClick={toggleTheme}
-            style={{ cursor: "pointer" }}
           >
             {isDark ? (
               <Image
