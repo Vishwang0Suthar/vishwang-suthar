@@ -27,7 +27,7 @@ const Collection = () => {
           <Image
             src={data.imgUrl}
             alt={data.alt}
-            className="hover:brightness-110  hover:scale-105 duration-500 transition-all"
+            className="hover:brightness-110 pointer-events-none  hover:scale-105 duration-500 transition-all"
             loading="lazy"
             width={0}
             height={0}

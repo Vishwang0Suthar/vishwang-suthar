@@ -13,14 +13,16 @@ const navItems = [
 
 const Header = () => {
   const { isDark, toggleTheme } = useTheme();
+  const [mute, setMute] = useState(false);
+  const toggleMute = () => {
+    setMute((prev) => !prev);
+  };
 
   return (
     <header
-      className={`flex w-full top-0 z-50 sticky  flex-col ${
-        isDark ? "bg-white " : "bg-black "
-      }`}
+      className={`flex w-full top-0 z-50 sticky  backdrop-blur-sm flex-col `}
     >
-      <div className="w-full h-2"></div>
+      <div className="w-full h-2 bg-transparent"></div>
       <div
         className={`border-t-2 shadow-sm   ${
           isDark
@@ -33,16 +35,29 @@ const Header = () => {
             isDark ? "border-black divide-black" : "border-white divide-white"
           } items-center divide-x-2    h-full`}
         >
-          <div className="aspect-square  flex items-center h-full justify-center ">
-            <Image
-              src="/icons/volume.svg"
-              alt="Volume Icon"
-              className={`${
-                isDark ? "invert-0" : "invert"
-              } invert h-7 w-7 lg:h-8 lg:w-8`}
-              width="100"
-              height="100"
-            />
+          <div
+            onClick={toggleMute}
+            className="aspect-square  flex items-center h-full justify-center "
+          >
+            {mute ? (
+              <Image
+                src="/icons/volume.svg"
+                alt="Volume Icon"
+                className={`${
+                  isDark ? "invert-0" : "invert"
+                } invert h-7 w-7 lg:h-8 lg:w-8 volume`}
+                width="100"
+                height="100"
+              />
+            ) : (
+              <Image
+                src="/icons/volume-mute.svg"
+                alt="Volume mute Icon"
+                className={`${isDark ? "invert-0" : "invert"} invert h-7 w-7 lg:h-8 lg:w-8 volume-mute`}
+                width="100"
+                height="100"
+              />
+            )}
           </div>
           {navItems.map((item, index) => (
             <div

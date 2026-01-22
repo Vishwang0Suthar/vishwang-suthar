@@ -113,7 +113,7 @@ export default function TiltedCard({
             alt={altText}
             width={parseInt(imageWidth)}
             height={parseInt(imageHeight)}
-            className="rounded-[15px] object-cover"
+            className="rounded-[15px]  object-cover"
           />
         </motion.div>
 
