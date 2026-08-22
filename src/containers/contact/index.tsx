@@ -68,7 +68,7 @@ const Contact = () => {
   const bg = isDark ? "bg-white text-black" : "bg-black text-white";
 
   return (
-    <section className={`py-56 ${isDark ? "text-black" : "text-white"}`}>
+    <section className={`pt-56 pb-32 ${isDark ? "text-black" : "text-white"}`}>
       <div className="flex gap-6 flex-col md:flex-row">
         {/* Left Section */}
         <div className="flex-1 flex flex-col">
