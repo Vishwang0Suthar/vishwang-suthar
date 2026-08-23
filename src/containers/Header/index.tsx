@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import "./index.css";
 import { useTheme } from "@/components/ThemeContext";
 
 const navItems = [

@@ -3,7 +3,7 @@ import "./stroke.css";
 
 const Brushstroke = () => {
   return (
-    <div className=" -mt-4 z-0 h-24">
+    <div className=" -mt-4 z-0 h-8">
       <div className="yellow-stroke">
         <svg xmlns="http://www.w3.org/2000/svg" id="yellow-stroke">
           <path
