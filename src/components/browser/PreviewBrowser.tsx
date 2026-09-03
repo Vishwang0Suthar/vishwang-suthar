@@ -857,11 +857,9 @@ const PreviewBrowser = ({ isOpen, onClose, type, url, title }: Props) => {
           tabs={tabs}
           activeTab={activeTab}
           isDark={isDark}
-          showProjectPicker={showProjectPicker}
           onSelect={selectTab}
           onClose={closeTab}
           onNewTab={createNewTab}
-          onSelectProject={selectProject}
           onMinimize={toggleMinimize}
           onMaximize={toggleMaximize}
           onCloseBrowser={onClose}
