@@ -1,9 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import { Icons } from "@/lib/constData";
 // import Arrow from "@/public/icons/arrow.svg";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "../ThemeContext";
+import PreviewModal from "../Projectmodal";
 
 const Colors = [
   { Color: "bg-red-600" },
@@ -29,6 +30,10 @@ const Projectcard = ({
   videoLink,
 }: Props) => {
   const { isDark } = useTheme();
+  const [modal, setModal] = useState<{
+    type: "site" | "video";
+    url: string;
+  } | null>(null);
 
   return (
     <div
@@ -101,6 +106,38 @@ const Projectcard = ({
             </div>
           </div>
           <div className="  flex gap-2 justify-between">
+            {/* <Link
+              href={deploymentLink} // Fallback to "#" if undefined (should never happen)
+              className="flex-1 justify-center"
+              target="_blank"
+              // className=""
+              rel="noopener noreferrer"
+            >
+              <div className="w-full relative md:h-28 h-28 flex items-center justify-center  aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
+                <Image
+                  src="/icons/site.svg"
+                  alt="link to site"
+                  className=" md:h-16 md:w-16 h-6 w-6"
+                  height={100}
+                  width={100}
+                />
+              </div>
+            </Link> */}
+            <button
+              type="button"
+              onClick={() => setModal({ type: "site", url: deploymentLink })}
+              className="flex-1 justify-center"
+            >
+              <div className="w-full relative md:h-28 h-28 flex items-center justify-center aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
+                <Image
+                  src="/icons/site.svg"
+                  alt="preview site"
+                  className="md:h-16 md:w-16 h-6 w-6"
+                  height={100}
+                  width={100}
+                />
+              </div>
+            </button>
             {videoLink && (
               <Link
                 href={videoLink}
@@ -119,23 +156,6 @@ const Projectcard = ({
                 </div>
               </Link>
             )}
-            <Link
-              href={deploymentLink} // Fallback to "#" if undefined (should never happen)
-              className="flex-1 justify-center"
-              target="_blank"
-              // className=""
-              rel="noopener noreferrer"
-            >
-              <div className="w-full relative md:h-28 h-28 flex items-center justify-center  aspect-square group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0">
-                <Image
-                  src="/icons/site.svg"
-                  alt="link to site"
-                  className=" md:h-16 md:w-16 h-6 w-6"
-                  height={100}
-                  width={100}
-                />
-              </div>
-            </Link>
           </div>
 
           {/* <p className="group-hover:bg-white opacity-0 text-sm group-hover:opacity-100 duration-300 translate-y-4 group-hover:translate-y-0 ">
@@ -152,6 +172,15 @@ const Projectcard = ({
           style={{ width: "100%", height: "auto" }}
         />
       </div>{" "}
+      {modal && (
+        <PreviewModal
+          isOpen={!!modal}
+          onClose={() => setModal(null)}
+          type={modal.type}
+          url={modal.url}
+          title={heading}
+        />
+      )}
     </div>
   );
 };
