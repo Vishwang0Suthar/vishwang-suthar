@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/ThemeContext";
-
+import "./index.css";
 const navItems = [
   { href: "/catalogue", label: "Catalogue" },
   { href: "/", label: "Home" },
