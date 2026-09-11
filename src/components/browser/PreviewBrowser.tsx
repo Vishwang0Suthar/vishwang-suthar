@@ -21,7 +21,6 @@ type Props = {
   isOpen: boolean;
   onClose: () => void;
 
-  type: PreviewType;
   url: string;
   title: string;
 };
@@ -32,7 +31,7 @@ const MIN_HEIGHT = 280;
 const DEFAULT_WIDTH = 960;
 const DEFAULT_HEIGHT = 600;
 
-const PreviewBrowser = ({ isOpen, onClose, type, url, title }: Props) => {
+const PreviewBrowser = ({ isOpen, onClose, url, title }: Props) => {
   const { isDark } = useTheme();
 
   // =========================================================
@@ -189,14 +188,14 @@ const PreviewBrowser = ({ isOpen, onClose, type, url, title }: Props) => {
 
     const initialId = `tab-${Date.now()}`;
 
-    const initialTab = createTab(initialId, url, title, type);
+    const initialTab = createTab(initialId, url, title);
 
     setTabs([initialTab]);
     setActiveTab(initialId);
 
     setShowProjectPicker(false);
     setIsLoading(true);
-  }, [isOpen, url, title, type, initializeWindow, createTab]);
+  }, [isOpen, url, title, initializeWindow, createTab]);
 
   // =========================================================
   // NAVIGATION
@@ -477,7 +476,7 @@ const PreviewBrowser = ({ isOpen, onClose, type, url, title }: Props) => {
   // DRAGGING
   // =========================================================
 
-  const startDrag = (e: React.MouseEvent<HTMLDivElement>) => {
+  const startDrag = (e: React.MouseEvent) => {
     if (e.button !== 0 || isMaximized || dragging.current) {
       return;
     }

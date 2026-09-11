@@ -176,7 +176,6 @@ const Projectcard = ({
         <PreviewModal
           isOpen={!!modal}
           onClose={() => setModal(null)}
-          type={modal.type}
           url={modal.url}
           title={heading}
         />

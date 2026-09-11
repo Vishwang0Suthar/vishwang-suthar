@@ -8,20 +8,13 @@ type Props = {
   isOpen: boolean;
   onClose: () => void;
 
-  type: PreviewType;
   url: string;
   title: string;
 };
 
-const ProjectModal = ({ isOpen, onClose, type, url, title }: Props) => {
+const ProjectModal = ({ isOpen, onClose, url, title }: Props) => {
   return (
-    <PreviewBrowser
-      isOpen={isOpen}
-      onClose={onClose}
-      type={type}
-      url={url}
-      title={title}
-    />
+    <PreviewBrowser isOpen={isOpen} onClose={onClose} url={url} title={title} />
   );
 };
 
