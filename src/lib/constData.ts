@@ -6,6 +6,7 @@ import MemoryGame from "@/public/images/projects-thumbnails/memory-game.png";
 import CRTtv from "@/public/images/projects-thumbnails/crt-tv-2.png";
 import Streamlit from "@/public/images/projects-thumbnails/streamlit.png";
 import Lustria from "@/public/images/projects-thumbnails/Lustria.png";
+import Pogoland from "@/public/images/projects-thumbnails/pogoland.png";
 
 export const Icons = [
   {
@@ -17,6 +18,13 @@ export const Icons = [
 ];
 
 export const ProjectInfo = [
+  {
+    heading: "Pet Boarding",
+    title: "Pogoland",
+    body: `A whimsical digital home for Pogoland, crafted to make discovering and inquiring about pet care as joyful as the pets themselves.`,
+    imgURL: Pogoland,
+    deploymentLink: "https://pogoland.in/",
+  },
   {
     heading: "Internship Project",
     title: "Lustria",
