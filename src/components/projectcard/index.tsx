@@ -145,7 +145,7 @@ const Projectcard = ({
         <Image
           src={imgURL}
           alt="Project-img"
-          className="absolute top-0 left-0 group-hover:blur-sm transition-all duration-500 ease-in-out z-0"
+          className="absolute top-0 left-0 group-hover:blur-sm transition-all  duration-500 ease-in-out z-0"
           width={0}
           height={0}
           sizes="100vw"
