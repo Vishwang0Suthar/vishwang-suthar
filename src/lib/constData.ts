@@ -7,6 +7,7 @@ import CRTtv from "@/public/images/projects-thumbnails/crt-tv-2.png";
 import Streamlit from "@/public/images/projects-thumbnails/streamlit.png";
 import Lustria from "@/public/images/projects-thumbnails/Lustria.png";
 import Pogoland from "@/public/images/projects-thumbnails/pogoland.png";
+import Astroangadh from "@/public/images/projects-thumbnails/astro-angadh.png";
 
 export const Icons = [
   {
@@ -19,7 +20,14 @@ export const Icons = [
 
 export const ProjectInfo = [
   {
-    heading: "Pet Boarding",
+    heading: "Astrology",
+    title: "Astro Angadh",
+    body: `A premium digital experience for astrology consultations, designed to make exploring Vedic astrology, discovering services, and booking personalized consultations feel simple and intuitive.`,
+    imgURL: Astroangadh,
+    deploymentLink: "https://astroangadh.com/",
+  },
+  {
+    heading: "Land of happy paws",
     title: "Pogoland",
     body: `A whimsical digital home for Pogoland, crafted to make discovering and inquiring about pet care as joyful as the pets themselves.`,
     imgURL: Pogoland,
