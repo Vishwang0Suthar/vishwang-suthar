@@ -26,7 +26,6 @@ export const ProjectInfo = [
     imgURL: Prepora,
     deploymentLink: "https://prepora-eight.vercel.app/",
   },
-  ,
   {
     heading: "Astrology",
     title: "Astro Angadh",

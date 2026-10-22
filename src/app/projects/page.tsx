@@ -3,7 +3,7 @@ import Projectcard from "@/components/projectcard";
 import React, { useEffect, useState } from "react";
 import { ProjectInfo } from "@/lib/constData";
 import { useTheme } from "@/components/ThemeContext";
-
+// import info from ""
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
 
