@@ -8,7 +8,7 @@ import Streamlit from "@/public/images/projects-thumbnails/streamlit.png";
 import Lustria from "@/public/images/projects-thumbnails/Lustria.png";
 import Pogoland from "@/public/images/projects-thumbnails/pogoland.png";
 import Astroangadh from "@/public/images/projects-thumbnails/astro-angadh.png";
-
+import Prepora from "@/public/images/projects-thumbnails/prepora.png";
 export const Icons = [
   {
     Icon: Minimize,
@@ -19,6 +19,13 @@ export const Icons = [
 ];
 
 export const ProjectInfo = [
+  {
+    heading: "Interview Prep Platform",
+    title: "Prepora",
+    body: `An AI-driven interview preparation platform that transforms job descriptions into tailored preparation experiences. It automates requirement extraction, company website research, and personalized question generation to help candidates prepare strategically for their target roles.`,
+    imgURL: Prepora,
+    deploymentLink: "https://prepora-eight.vercel.app/",
+  },
   {
     heading: "Astrology",
     title: "Astro Angadh",
