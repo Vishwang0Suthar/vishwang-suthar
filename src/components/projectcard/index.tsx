@@ -145,11 +145,9 @@ const Projectcard = ({
         <Image
           src={imgURL}
           alt="Project-img"
-          className="absolute top-0 left-0 group-hover:blur-sm transition-all  duration-500 ease-in-out z-0"
-          width={0}
-          height={0}
+          fill
           sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
+          className="object-cover object-top transition-all duration-500 ease-in-out group-hover:blur-sm"
         />
       </div>{" "}
     </div>
