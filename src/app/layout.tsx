@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/containers/Header";
 import { ThemeProvider } from "@/components/ThemeContext";
 import ThemedBody from "@/components/ThemedBody";
+import { Analytics } from "@vercel/analytics/next";
 
 const ibmMono = IBM_Plex_Mono({
   weight: "400",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ThemedBody className={`${ibmMono.className} antialiased`}>
           <Header />
           {children}
+          <Analytics />
         </ThemedBody>
       </ThemeProvider>
     </html>
